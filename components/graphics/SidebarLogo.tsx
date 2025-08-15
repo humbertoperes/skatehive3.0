@@ -18,7 +18,8 @@ const SidebarLogo = ({ prioritizeAuctionImage = false }: SidebarLogoProps) => {
   const [pixelColor] = useToken("colors", ["primary"]);
 
   const skateHiveLogoContent = (
-    <SkateHiveLogo
+    <Image 
+    src="/logos/barracao.jpeg"
       style={{
         width: "100%",
         height: "100%",
