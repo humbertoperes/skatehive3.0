@@ -1,5 +1,7 @@
+
 import { Metadata } from "next";
 import Image from "next/image";
+import MarqueeBarracao from "@/components/shared/MarqueeBarracao";
 
 export const metadata: Metadata = {
   title: "DAO - Under Construction",
@@ -22,7 +24,9 @@ export const metadata: Metadata = {
 export default function DAOPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800">
-      <div className="text-center px-6 py-12 max-w-2xl mx-auto">
+      <div className="text-center px-6 py-12 max-w-2xl mx-auto w-full">
+  {/* Marquee */}
+  <MarqueeBarracao />
         {/* Logo */}
         <div className="mb-8">
           <Image
@@ -36,6 +40,7 @@ export default function DAOPage() {
 
         {/* Main Content */}
         <div className="space-y-6">
+          {/* ...existing code... */}
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 font-mono">
             DAO
           </h1>
@@ -92,6 +97,7 @@ export default function DAOPage() {
           </div>
         </div>
       </div>
+  {/* Marquee animation keyframes are now in globals.css */}
     </div>
   );
 }
