@@ -4,7 +4,7 @@ export default function MarqueeBarracao() {
   // The marquee texts are static, so this is safe for client rendering
   const skatehiveText = Array(8).fill('SKATEHIVE').join(' • ');
   const nogentaText = Array(8).fill('NOGENTA').join(' • ');
-  const barracaoText = Array(8).fill('BARRACÃO').join(' • ');
+  const barracaoText = Array(8).fill('BARRACÃO DISSIDENTE').join(' • ');
   return (
     <div className="w-full mb-6">
       {/* SKATEHIVE Marquee */}
